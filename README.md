@@ -1,43 +1,64 @@
-# World-of-Warcraft-Sentiment-Analysis
-Overview
-This project aims to analyze the sentiment of the World of Warcraft community regarding various aspects of the game, such as updates, expansions, gameplay features, and more. Utilizing data from Twitter, Reddit, and Blizzard's API, we will employ Machine Learning techniques to gauge community sentiment, identify trends, and uncover insights that could inform both players and developers alike.
+# World of Warcraft Sentiment Analysis
 
-Objectives
-To collect and analyze social media data related to World of Warcraft.
-To implement sentiment analysis using Machine Learning models to understand community sentiment.
-To identify key factors that contribute to positive or negative sentiment within the WoW community.
-To visualize sentiment trends over time in relation to game updates and community events.
-to wrap finalized code and models into an interactive environment using front-end development
+# Overview
+
+This project focuses on analyzing the sentiment of World of Warcraft (WoW) community discussions using a dataset of comments from the WoW YouTube channel. The goal is to preprocess unstructured text data, apply sentiment analysis using machine learning techniques, and visualize trends within the community's reactions to various aspects of the game, such as expansions, gameplay features, and updates.
+
+While this phase focuses on sentiment analysis with YouTube data, future iterations aim to expand to more advanced visualizations using JavaScript and deployment pipelines with AWS for MLOps.
+
+# Objectives
+
+Preprocess and clean the WoW YouTube dataset to prepare for sentiment analysis.
+Implement sentiment analysis models to classify comments as positive, negative, or neutral.
+Perform exploratory data analysis (EDA) to identify trends and key themes in the dataset.
+Visualize sentiment trends and insights using effective data visualization techniques.
+(Future Goal) Develop interactive visualizations and deploy the final solution using JavaScript and AWS.
 Data Sources
-Twitter: Tweets mentioning World of Warcraft, using specific hashtags and keywords.
-Reddit: Posts and comments from the WoW subreddit and other relevant forums.
-Blizzard API: In-game data that might correlate with community sentiment.
+YouTube Dataset: Comments scraped from the WoW YouTube channel, sourced from Kaggle.
+Additional data sources, such as Reddit and Twitter, will be considered in future phases of the project.
 Tools and Technologies
-Python: For data collection, processing, and Machine Learning.
-Jupyter Notebook: For interactive data exploration and analysis.
-Spyder For writing large modules and repeatable functions and code.
-Pandas & NumPy: For data manipulation and numerical computation.
-Matplotlib & Seaborn: For data visualization.
-Scikit-learn & TensorFlow: For implementing Machine Learning models.
-PRAW (Python Reddit API Wrapper): To access Reddit data.
-Tweepy: To access Twitter data.
-JavaScript for UI design
-Project Structure
-data/: Directory for storing raw and processed data.
-notebooks/: Jupyter notebooks for exploration and analysis.
-scripts/: Python scripts for data collection and processing.
-models/: Trained Machine Learning models and scripts.
-reports/: Analysis reports and insights.
+Python: Core programming language for data processing and analysis.
+Jupyter Notebook: For interactive exploration and development.
+pandas & NumPy: For data cleaning and manipulation.
+tqdm: For tracking progress during data transformations.
+SymSpell: For domain-specific spell checking and text normalization.
+Matplotlib & Seaborn: For creating visualizations to identify trends.
+Scikit-learn: For implementing basic sentiment analysis models.
+
+# Data Sources
+
+# YouTube Dataset: Comments scraped from the WoW YouTube channel, sourced from Kaggle.
+
+Additional data sources, such as Reddit and Twitter, will be considered in future phases of the project.
+Tools and Technologies
+Python: Core programming language for data processing and analysis.
+Jupyter Notebook: For interactive exploration and development.
+pandas & NumPy: For data cleaning and manipulation.
+tqdm: For tracking progress during data transformations.
+SymSpell: For domain-specific spell checking and text normalization.
+Matplotlib & Seaborn: For creating visualizations to identify trends.
+Scikit-learn: For implementing basic sentiment analysis models.
+
+# Current Progress
+
+Data Cleaning: Processed comments to remove emojis, fix spacing issues, correct spelling errors, and normalize text using a custom pipeline with SymSpell.
+Exploratory Analysis: Conducted word frequency analysis to identify commonly used terms like "raid," "dps," and "loot."
+Sentiment Analysis: Began implementing basic models to classify sentiments and identify key themes in the dataset.
+Future Directions
+Integrate data from additional sources such as Reddit and Twitter for a more comprehensive analysis.
+Explore deep learning models for improved sentiment classification accuracy.
+Create interactive visualizations using JavaScript for a better user experience.
+Deploy the finalized project on AWS with a robust MLOps pipeline.
 How to Contribute
-Contributions are welcome! If you're interested in contributing, please contact me on discord isaacdechant and read the CONTRIBUTING.md for more information on how to get started.
+Contributions are welcome! If you're interested in collaborating, please reach out to me via GitHub or email at ipasquantoniodechant@gmail.com. For more details on contributing, refer to CONTRIBUTING.md.
 
-License
-This project is not currently licensed.
+# Contact
+Feel free to reach out with any questions or suggestions:
 
-Acknowledgments
-Thanks to the World of Warcraft community for the wealth of data and discussion.
-This project is not affiliated with Blizzard Entertainment but seeks to contribute positively to the community's understanding and enjoyment of the game. We use only publicly accesible data.
-Contact
-For any queries or discussions, please open an issue on this repository or contact me at ipasquantoniodechant@gmail.com.
+Email: ipasquantoniodechant@gmail.com
 
-Note: This project is in the initial stages of development. The above details are subject to change as the project progresses.
+# Acknowledgments
+
+Thanks to the World of Warcraft community for the wealth of data and discussions. This project is not affiliated with Blizzard Entertainment and uses only publicly accessible data to ensure compliance and respect for community privacy.
+
+
